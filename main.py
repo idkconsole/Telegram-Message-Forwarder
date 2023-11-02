@@ -1,13 +1,11 @@
-# group_ids = ['dynamitemarket','buysellig','alienmarkett','SocialCapitalmarket','a1sell','Epmarket','paradisewts','TrustedMarket','boostmarket','MysteryMart','themobilemarket','synergylounge','artificialcolors','ligitopp','sikeyyop','discordmarketa','DiscordMP','LIGITSHOP','BobaMarket','theneonmp','sparkwtb','spiritwtb','DMark8','kittywts','XENOMarket','adsment','Moneymarkethunters', 'royalmarkets','aomarket','jacesmarket','ubereatmarket','AuxaMarket', 'Marketplaced','bpmarkettt','PlugsMart','Marketmeme','SickwebMarket','buysellplace']
-
 import asyncio
 from telethon.sync import TelegramClient
 from telethon.sessions import StringSession
 from telethon.tl.functions.messages import GetHistoryRequest
 
 async def main():
-    api_id = '10770333'
-    api_hash = 'ade42d7d1124b9bd754488386a0fab3e'
+    api_id = ''
+    api_hash = ''
     session_string = None
 
     async with TelegramClient(StringSession(session_string), api_id, api_hash) as client:
@@ -16,7 +14,7 @@ async def main():
         from_group_link = "https://t.me/discordverifiedbot"
         from_message_id = 26
         from_chat_entity = await client.get_input_entity(from_group_link)
-        group_ids = ['dynamitemarket','buysellig','alienmarkett','SocialCapitalmarket','a1sell','Epmarket','paradisewts','TrustedMarket','boostmarket','MysteryMart','themobilemarket','synergylounge','artificialcolors','ligitopp','sikeyyop','discordmarketa','DiscordMP','LIGITSHOP','BobaMarket','theneonmp','sparkwtb','spiritwtb','DMark8','kittywts','XENOMarket','adsment','Moneymarkethunters', 'royalmarkets','aomarket','jacesmarket','ubereatmarket','AuxaMarket', 'Marketplaced','bpmarkettt','PlugsMart','Marketmeme','SickwebMarket','buysellplace']
+        group_ids = ['ligitshop', 'hypewts']
         while True:
             for group_id in group_ids:
                 try:
